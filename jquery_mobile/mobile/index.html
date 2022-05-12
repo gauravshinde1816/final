@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <title>JQuery</title>
+</head>
+
+<body>
+
+    <div data-role="page" id="home">
+        <!-- header -->
+        <div data-role="header" class="header">
+            <div class="logo">
+                <img src="./img/Instagram_logo.png" class="img_responsize" alt="" srcset="">
+            </div>
+
+            <div class="icons">
+                <i class="fas  fa-comment"></i>
+                <i class="far  fa-heart"></i>
+                <i class="fa-solid  fa-user"></i>
+            </div>
+        </div>
+
+
+        <!-- ui-contents-->
+        <div data-role="ui-content">
+            <!-- list -->
+            <ul data-role="listview">
+                    <li><a href="profile.html" data-transition="flip">Profile</a></li>
+                    <li>Audi</li>
+                    <li>BMW</li>
+                    <li>Cadillac</li>
+                    <li>Ferrari</li>
+            </ul>
+
+
+            <!-- table -->
+
+            <table data-role="table" class="ui-responsive table-stroke">
+                    <thead>
+                           <tr>
+                                 <th data-priority="2">Rank</th>
+                                 <th>Movie Title</th>
+                                 <th data-priority="3">Year</th>
+                                 <th data-priority="1"><abbr title="Rotten Tomato Rating">Rating</abbr></th>
+                                 <th data-priority="5">Reviews</th>
+                               </tr>
+                    </thead>
+                    <tbody>
+                      
+                             <tr>
+                                         <th>1</th>
+                                         <td><a href="https://en.wikipedia.org/wiki/Citizen_Kane" data-rel="external">Citizen Kane</a></td>
+                                         <td>1941</td>
+                                         <td>100%</td>
+                                         <td>74</td>
+                                       </tr>
+                                       <tr>
+                                         <th>2</th>
+                                         <td><a href="https://en.wikipedia.org/wiki/Casablanca_(film)" data-rel="external">Casablanca</a></td>
+                                         <td>1942</td>
+                                         <td>97%</td>
+                                         <td>64</td>
+                                       </tr>
+                   
+                    </tbody>
+            </table>
+        </div>
+
+        <div data-role="footer" data-position="fixed" class="footer">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#gallery" data-icon="grid">gallery</a></li>
+                    <li><a href="#page1" data-icon="star" class="ui-btn-active">Favs</a></li>
+                    <li><a href="#page2" data-icon="gear">Setup</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <!-- footer -->
+    </div>
+
+    <div data-role="page" id="gallery">
+        <div data-role="header">
+            <a href="#home" data-icon="back"></a>
+            <h1>gallery</h1>
+        </div>
+
+
+        <div data-role="ui-content">
+            <img src="./img/logo.jpg" alt="" srcset="">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat perspiciatis numquam dicta vel, voluptatum
+            fugiat. Eligendi ipsa eos tenetur obcaecati ratione! Distinctio facere expedita in laborum. Cupiditate qui
+            voluptas ratione.
+        </div>
+
+        <div data-role="footer">
+            Footer
+        </div>
+    </div>
+
+
+
+    <div data-role="page" id="page1">
+        <div data-role="header">
+            <a href="#home" data-icon="back"></a>
+            <h1>Page 1</h1>
+        </div>
+
+
+        <div data-role="ui-content">
+            <h1>Page 1</h1>
+        </div>
+
+        <div data-role="footer">
+            Footer
+        </div>
+    </div>
+
+    <div data-role="page" id="page2">
+        <div data-role="header">
+            <a href="#home" data-icon="back"></a>
+            <h1>Page 2</h1>
+        </div>
+
+
+        <div data-role="ui-content">
+            <h1>Page 2</h1>
+        </div>
+
+        <div data-role="footer">
+            Footer
+        </div>
+    </div>
+
+    <div data-role="page" data-dialog="true" id="alert">
+        <h1>Alert</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quos veritatis quam.</p>
+    </div>
+
+    
+</body>
+
+</html>

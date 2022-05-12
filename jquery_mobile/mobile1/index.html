@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  </head>
+  <body>
+
+    <style>
+        .header{
+            text-align: center;
+        }
+        .blocks{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+    <!-- home  -->
+    <div data-role="page" id="home">
+      <!-- header -->
+
+      <div data-role="header" class="header">Instagram
+      </div>
+
+      <!-- ui content -->
+      <div role="main" class="ui-content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
+        culpa eveniet asperiores unde architecto iste inventore quo quam
+        possimus at vitae perspiciatis maxime, necessitatibus consequatur nam,
+        est consectetur, excepturi perferendis.
+
+        
+      </div>
+
+      <a href="#alert" data-transition="slidedown" >Open</a>
+
+      <!-- footer -->
+      <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#about" data-icon="grid">About</a></li>
+                <li><a href="#help" data-icon="grid">Help</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+    <div data-role="page" id="about">
+        <!-- header -->
+  
+        <div data-role="header" class="header">About
+            <a href="#home" data-icon="back"></a>
+        </div>
+  
+        <!-- ui content -->
+        <div role="main" class="ui-content">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
+          culpa eveniet asperiores unde architecto iste inventore quo quam
+          possimus at vitae perspiciatis maxime, necessitatibus consequatur nam,
+          est consectetur, excepturi perferendis.
+        </div>
+  
+        <!-- footer -->
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#about" data-icon="grid">About</a></li>
+                    <li><a href="#help" data-icon="grid">Help</a></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+
+      <div data-role="page" id="help">
+        <!-- header -->
+  
+        <div data-role="header" class="header">Help
+            <a href="#home"  data-icon="back"></a>
+        </div>
+  
+        <!-- ui content -->
+        <div role="main" class="ui-content">
+          <div class="ui-grid-b blocks">
+              <div class="ui-block-a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quibusdam.</div>
+              <div class="ui-block-b">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quibusdam.</div>
+              <div class="ui-block-c">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quibusdam.</div>
+
+          </div>
+        </div>
+  
+        <!-- footer -->
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#about" data-icon="grid">About</a></li>
+                    <li><a href="#help" data-icon="grid">Help</a></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+
+      <div data-role="page" id="alert" data-dialog="true">
+        <!-- header -->
+  
+        <div data-role="header" class="header">Alert
+           <a href="#home" data-icon="back"></a>
+        </div>
+  
+        <!-- ui content -->
+        <div role="main" class="ui-content">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
+          culpa eveniet asperiores unde architecto iste inventore quo quam
+          possimus at vitae perspiciatis maxime, necessitatibus consequatur nam,
+          est consectetur, excepturi perferendis.
+  
+          
+        </div>
+
+
+      </div>
+  </body>
+</html>
